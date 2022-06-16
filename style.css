@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Odibee Sans', cursive;
+  text-align: center;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.header {
+  background: #fff;
+  height: 150px;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* choose player buttons section */
+.choose-player {
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.choose-player h2 {
+  font-size: 2rem;
+}
+.choose-player .player-select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choose-player .player-select .player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 2rem;
+  transition: all 0.5s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.choose-player .player-select .player:hover{
+  font-size: 2.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.choose-player .player-select .active {
+  background: #000;
+  color: #fff;
+}
+
+/* board section */
+.board-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.board-wrapper .board {
+  width: 400px;
+  height: 400px;
+  margin-top: 10px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.board-wrapper .board .square {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 6rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* message and reset button section */
+.message-container{
+  margin: 0 auto;
+  margin-top: 40px;
+  font-size: 2.5rem;
+}
+.message-container button {
+  padding: 15px 20px;
+  margin: 20px auto;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.message-container button:hover {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer {
+  height: 50px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: slategray;
+}
+.footer a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.footer a:hover {
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
